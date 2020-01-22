@@ -1,0 +1,20 @@
+{{# each products }}
+ 
+
+<div class="row" >
+  {{# each this }}
+  <div class="column" style="border-style: groove;">
+    
+    <img src="{{ this.imagepath }}" style="height:200px" class="img1-fluid img-thumbnail" alt="...">
+  <div class="caption1">
+      <h5>{{this.title}}</h5>
+      <p>Rs {{this.price}}</p>
+      <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+  </div>
+  </div>
+  
+  
+  {{/each}}
+</div>
+{{/each}}
+
